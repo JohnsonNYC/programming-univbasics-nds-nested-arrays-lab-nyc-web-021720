@@ -22,9 +22,6 @@ end
 
 def sorted_matrix
   new_Array = [CONVENTIONAL_PRODUCE.sort,ORGANIC_PRODUCE.sort]
-  # Using Array literal syntax only, build another nested array that 
-  # uses the arrays of conventional and organic produce as before.
-  # However, this time, sort each internal array alphabetically by the first character
 end
 
 def matrix_lookup(matrix, row, column)
@@ -32,7 +29,5 @@ def matrix_lookup(matrix, row, column)
 end
 
 def matrix_update(matrix, row, column, new_value)
-  # Given any matrix (array of arrays), a row index and a column index, 
-  # Update the matrix location at that row and column to have the value of new_value
-  # Return the updated matrix
+matrix[row][column] = new_value
 end
